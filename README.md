@@ -26,3 +26,8 @@ Il démontre l'utilisation de Spring Batch simple sans configuration modulaire.
 ## 📦 Lancement
 ```bash
 ./mvnw spring-boot:run
+
+
+![Build](https://img.shields.io/badge/build-passing-brightgreen)
+![Java](https://img.shields.io/badge/java-17-blue)
+![Spring](https://img.shields.io/badge/spring--boot-3.2.0-success)
