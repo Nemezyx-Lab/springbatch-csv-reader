@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheNemeZyX - Démonstrateurs Spring Batch & Co.</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 0.5rem 2rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007acc;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #007acc;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+        footer {
+            background-color: #222;
+            color: #bbb;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TheNemeZyX - POCs Spring Batch & Projets Démo</h1>
+        <p>Ma vitrine de projets techniques progressifs</p>
+    </header>
+
+    <nav>
+        <a href="#intro">Accueil</a>
+        <a href="#springbatch">Spring Batch</a>
+        <a href="#autres">Autres projets</a>
+    </nav>
+
+    <main>
+        <section id="intro">
+            <h2>Présentation</h2>
+            <p>Bienvenue sur mon site personnel dédié à mes POCs. Ici, vous trouverez mes expérimentations autour de Spring Batch, intégrées progressivement à des stacks plus riches (REST, Angular, H2, JPA...).</p>
+            <p>Le but est à la fois de montrer une montée en complexité maîtrisée et de proposer des démonstrateurs facilement testables, avec code source à l'appui.</p>
+        </section>
+
+        <section id="springbatch">
+            <h2>POCs Spring Batch</h2>
+            <ul>
+                <li>
+                    <h3>Lecture simple CSV</h3>
+                    <p>POC de base : lecture d'un fichier CSV et affichage des données en console.</p>
+                    <a class="btn" href="https://github.com/TheNemeZyX/springbatch-csv-base">Code source</a>
+                </li>
+                <li>
+                    <h3>CSV + Jobs / Steps</h3>
+                    <p>Ajout de la structure job/step pour une meilleure modularité.</p>
+                    <a class="btn" href="https://github.com/TheNemeZyX/springbatch-csv-jobstep">Code source</a>
+                </li>
+                <li>
+                    <h3>CSV + BDD (JDBC)</h3>
+                    <p>Enregistrement des données lues dans une base de données via JDBC.</p>
+                    <a class="btn" href="https://github.com/TheNemeZyX/springbatch-csv-jdbc">Code source</a>
+                </li>
+                <li>
+                    <h3>CSV + BDD + Répartition modulaire</h3>
+                    <p>Utilisation de modules pour séparer lecture, traitement, persistance.</p>
+                    <a class="btn" href="https://github.com/TheNemeZyX/springbatch-csv-modular">Code source</a>
+                </li>
+                <li>
+                    <h3>POC avec H2 + Thymleaf</h3>
+                    <p>Intégration front-end avec une page HTML dynamique et la BDD embarquée H2.</p>
+                    <a class="btn" href="https://github.com/TheNemeZyX/springbatch-h2-thymleaf">Code source</a>
+                </li>
+                <li>
+                    <h3>Thymleaf + JPA</h3>
+                    <p>Ajout de JPA pour une gestion ORM plus moderne.</p>
+                    <a class="btn" href="https://github.com/TheNemeZyX/springbatch-jpa-thymleaf">Code source</a>
+                </li>
+                <li>
+                    <h3>API REST + Angular</h3>
+                    <p>Le front Angular interagit avec l'API Spring Boot exposant les résultats.</p>
+                    <a class="btn" href="https://github.com/TheNemeZyX/springbatch-angular-rest">Code source</a>
+                    <a class="btn" href="https://maison.nemezyx.fr:8081">Tester en direct</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="autres">
+            <h2>Autres projets (à venir)</h2>
+            <p>Projets à venir autour de Kafka, Spark, traitement de logs, production solaire, etc.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TheNemeZyX - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
